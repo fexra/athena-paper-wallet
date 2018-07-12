@@ -1,1 +1,4 @@
-# paper-turtle
+# Athena (ATHX) Wallet Generator
+
+## Credits
+- Athena

@@ -57,7 +57,7 @@ var genwallet = function(lang) {
   // wallet_keys_widget.innerHTML = keys.privateKeys;
   //address_qr_widget.innerHTML = "";
   //qr=new QRCode(address_qr_widget, {correctLevel:QRCode.CorrectLevel.L});
-  //qr.makeCode("turtlecoin:"+keys.public_addr);
+  //qr.makeCode("Athena:"+keys.public_addr);
 };
 
 /*
@@ -103,7 +103,7 @@ function genwallet_prefix_worker()
   wallet_keys_widget.innerHTML = keys.privateKeys;
 
   qr=new QRCode(address_qr_widget, {correctLevel:QRCode.CorrectLevel.L});
-  qr.makeCode("turtlecoin:"+keys.public_addr);
+  qr.makeCode("Athena:"+keys.public_addr);
 }
 
 var zerohex="0000000000000000000000000000000000000000000000000000000000000000";
