@@ -9,18 +9,7 @@
   z-index: 999;
   display: none;
 }
-div {
-  padding-top: 1rem; /* padding correction */
-}
 
-.private {
-  font-size: 0.9rem;
-  color: #a00;
-}
-.private-sm {
-  font-size: 0.8rem;
-  color: #a00;
-}
 @media print  {
   .noprint  {
     display: none;

@@ -2,12 +2,17 @@ var show_generate = function() {
   document.getElementById("generate").style.display = "block";
   document.getElementById("restore").style.display = "none";
   document.getElementById("step2").style.display = "none";
+  document.getElementById("step3").style.display = "none";
+  document.getElementById("step4").style.display = "none";
 };
 
 var show_restore = function() {
   document.getElementById("restore").style.display = "block";
   document.getElementById("generate").style.display = "none";
   document.getElementById("step2").style.display = "none";
+  document.getElementById("step3").style.display = "none";
+  document.getElementById("step4").style.display = "none";
+
 };
 
 var getStringWords = function(string) {
@@ -35,10 +40,16 @@ var restore_keys = function(lang) {
   view_key_widget.innerHTML = keys.view.sec;
 
   document.getElementById("step2").style.display = "block";
+  document.getElementById("step3").style.display = "block";
+  document.getElementById("step4").style.display = "block";
+
 };
 
 var genwallet = function(lang) {
   document.getElementById("step2").style.display = "block";
+  document.getElementById("step3").style.display = "block";
+  document.getElementById("step4").style.display = "block";
+
   var spend_key_widget = document.getElementById("spend_key_widget");
   var view_key_widget = document.getElementById("view_key_widget");
   var address_widget = document.getElementById("address_widget");
