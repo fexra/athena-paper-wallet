@@ -8,25 +8,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
 	<link rel="stylesheet" href="./assets/css/style.css">
 	
-	<script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
-
-	<script type="text/javascript">
-		document.addEventListener('DOMContentLoaded', () => {
-			const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-
-			if ($navbarBurgers.length > 0) {
-			$navbarBurgers.forEach( el => {
-				el.addEventListener('click', () => {
-				const target = el.dataset.target;
-				const $target = document.getElementById(target);
-				el.classList.toggle('is-active');
-				$target.classList.toggle('is-active');
-				});
-			});
-			}
-		});
-	</script>
-
   </head>
 <body>
     <section class="hero is-white is-fullheight">
@@ -225,6 +206,24 @@
 		</footer>
 	</section>
 
+	<script type="text/javascript">
+		document.addEventListener('DOMContentLoaded', () => {
+			const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+			if ($navbarBurgers.length > 0) {
+			$navbarBurgers.forEach( el => {
+				el.addEventListener('click', () => {
+				const target = el.dataset.target;
+				const $target = document.getElementById(target);
+				el.classList.toggle('is-active');
+				$target.classList.toggle('is-active');
+				});
+			});
+			}
+		});
+	</script>
+	
+	<script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
 	<script type="text/javascript" src="./assets/js/iframe-buster.js"></script>
 	<script type="text/javascript" src="./assets/js/crypto_utils.js"></script>
 	<script type="text/javascript" src="./assets/js/wallet.js"></script>
